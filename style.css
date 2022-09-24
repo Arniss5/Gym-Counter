@@ -22,11 +22,31 @@ body {
     justify-content: space-around;
     align-items: center;
     border-radius: 1rem;
+    position: relative;
+}
+
+#reset {
+    font-family: inherit;
+    background-color: rgba(133, 215, 0, 0.8);
+    padding: 0.2rem 0.3rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    right: 5%;
+    top: 5%;
+    position: absolute; 
+}
+
+#reset:hover {
+    color: rgb(133, 215, 0);
+    background-color: transparent;
+    border: 2px solid rgb(133, 215, 0);
+    cursor: pointer;
 }
 
 h1 {
     text-align: center;
     font-size: 2.5rem;
+    padding: 0.7rem;
     
 }
 
@@ -55,5 +75,6 @@ h1 {
 }
 
 #prev-repeats {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
+

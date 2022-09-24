@@ -42,5 +42,12 @@ function save() {
 
 //create click event on save button and assign save function
 
+//create reset function
+function reset() {
+    //set prevRepeats textContent to 'Previous repeats:'
+    prevRepeats.textContent = "Previous repeats:" + " "
+}
+
+
 
 
