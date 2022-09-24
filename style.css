@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    background-color: black;
+}
+
+.tracker {
+    max-width: 500px;
+    background-image: url("./images/background-gym.jpg");
+    background-size: cover;
+    padding: 2rem;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    
+}
+
+#repeats {
+    font-size: 4rem;
+}
+
+.tracker-btn {
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60%;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.tracker-btn:hover {
+    color: rgb(133, 215, 0);
+    cursor: pointer;
+}
+
+#save {
+    margin: 1rem 0;
+}
+
+#prev-repeats {
+    color: ;
+    font-size: 1.2rem;
+}
