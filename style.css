@@ -1,3 +1,7 @@
+:root {
+    --primary: rgb(133, 215, 0);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,9 +41,9 @@ body {
 }
 
 #reset:hover {
-    color: rgb(133, 215, 0);
+    color: var(--primary);
     background-color: transparent;
-    border: 2px solid rgb(133, 215, 0);
+    border: 2px solid var(--primary);
     cursor: pointer;
 }
 
@@ -57,7 +61,7 @@ h1 {
 .tracker-btn {
     font-family: inherit;
     font-size: 1.2rem;
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     background-color: rgba(0, 0, 0, 0.8);
     width: 60%;
     padding: 0.4rem;
@@ -66,7 +70,7 @@ h1 {
 }
 
 .tracker-btn:hover {
-    color: rgb(133, 215, 0);
+    color: var(--primary);
     cursor: pointer;
 }
 
