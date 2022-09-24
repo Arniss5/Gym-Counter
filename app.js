@@ -1,14 +1,14 @@
-//grab increment, decrement and save
-const incrementBtn = document.getElementById("increment");
-const decrementBtn = document.getElementById("decrement");
-const saveBtn = document.getElementById("save");
 //grab repeats
 const repeats = document.getElementById("repeats")
 //grab prev-repeats
 const prevRepeats = document.getElementById("prev-repeats");
+
 //initialise count to 0
 let count = 0
-//create increment function
+//initialise prevRepeats.textContent as localStorage gymSession
+prevRepeats.textContent = localStorage.getItem('gymSession')
+
+//INCREMENT
 function increment() {
     //increment count by 1
     count++
@@ -18,7 +18,7 @@ function increment() {
 
 //create click event on increment button and assign increment function
 
-//create decrement function
+//DECREMENT
 function decrement() {
     //decrement count by 1 unless count===0
     if (count > 0) {
@@ -30,10 +30,12 @@ function decrement() {
 
 //create click event on decrement button and assign decrement function
 
-//create save function 
+//SAVE
 function save() {
     //add current count value to prevRepeats textContent
     prevRepeats.textContent += count + " | "
+    //save prevRepeats.textContent to local storage
+    localStorage.setItem("gymSession", prevRepeats.textContent)
     //reset count to 0
     count = 0
     //reset repeats textContent to 0
@@ -42,10 +44,12 @@ function save() {
 
 //create click event on save button and assign save function
 
-//create reset function
+//RESET
 function reset() {
     //set prevRepeats textContent to 'Previous repeats:'
     prevRepeats.textContent = "Previous repeats:" + " "
+    //save prevRepeats.textContent to local storage
+    localStorage.setItem("gymSession", prevRepeats.textContent)
 }
 
 
