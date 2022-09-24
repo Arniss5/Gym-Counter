@@ -6,7 +6,10 @@ const prevRepeats = document.getElementById("prev-repeats");
 //initialise count to 0
 let count = 0
 //initialise prevRepeats.textContent as localStorage gymSession
-prevRepeats.textContent = localStorage.getItem('gymSession')
+if (localStorage.getItem('gymSession')) {
+    prevRepeats.textContent = localStorage.getItem('gymSession')
+}
+
 
 //INCREMENT
 function increment() {
